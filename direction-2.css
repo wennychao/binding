@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Caslon+Display&family=Merriweather:wght@400;700&family=Poppins:wght@200;300;400&display=swap');
+
+
+:root {
+    --font-display: 'Libre Caslon Display', serif;
+    --font-body: 'Lato', sans-serif;
+    --space: 20px;
+    --background: black;
+    --font-color: white;
+    --margin: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 50px;
+    color: rgb(254, 164, 193);
+}
+
+h1, h3, h4, blockquote, .read {
+    text-align: center;
+}
+
+blockquote, .read {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 22px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    color: rgb(43, 228, 102);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+h3 {
+    font-style: italic;
+    font-size: 26px;
+    color: rgb(254, 164, 193);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    text-align: left;
+}
+
+h4 {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
+    margin-left: var(--margin);
+}
+
+p {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+li {
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+.read {
+    color: rgb(255, 247, 162);
+    text-align: left;
+    display: block;
+}
+
