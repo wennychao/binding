@@ -29,7 +29,6 @@ h2 {
     font-size: 22px;
     padding-bottom: 8px;
     border-bottom: 1px solid rgb(222, 222, 222);
-    color: rgb(43, 228, 102);
     margin-left: var(--margin);
     margin-right: var(--margin);
 }
@@ -40,14 +39,12 @@ h3 {
     color: rgb(254, 164, 193);
     margin-left: var(--margin);
     margin-right: var(--margin);
-    text-align: left;
 }
 
 h4 {
     font-family: var(--font-body);
     font-weight: 300;
     font-size: 12px;
-    text-align: left;
     margin-left: var(--margin);
 }
 
@@ -67,7 +64,5 @@ li {
 
 .read {
     color: rgb(255, 247, 162);
-    text-align: left;
-    display: block;
 }
 

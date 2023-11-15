@@ -9,11 +9,10 @@
 h1 {
     font-weight: 300;
     line-height: 40px;
-    margin-top: 40px;
+    margin-top: var(--space);
 }
 
 #top {
-    background-color: rgb(252, 238, 110);
     color: rgb(0, 0, 0);
     padding-top: var(--space);
     padding-bottom: var(--space);
@@ -27,11 +26,11 @@ h1, h3, h4, blockquote, .read {
 h2 {
     padding-bottom: 8px;
     border-bottom: 1px solid rgb(222, 222, 222);
-    color: rgb(213, 87, 122);
 }
 
 h3 {
     font-style: italic;
+    color: rgb(213, 87, 122);
 }
 
 h4 {
@@ -53,6 +52,6 @@ li {
 }
 
 .read {
-    color:  rgb(71, 211, 73);
+    color:  rgb(212, 212, 212);
 }
 
