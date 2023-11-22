@@ -5,13 +5,10 @@
     --margin: 1rem;
 }
 
-/*nav {
-    border: 1px solid aliceblue;
-    height: 60px;
-}*/
-
 body {
     background-color: rgb(26, 26, 26);
+    margin-left: var(--margin);
+    margin-right:var(--margin);
 }
 
 nav, .back {
@@ -134,8 +131,8 @@ li:nth-child(3){
 @media screen and (min-width:600px) {
 
     h1, h2, h3, h4, h5, p, #t, ul{
-        margin-left: 5rem ;
-        margin-right: 5rem;
+        margin-left: 3rem ;
+        margin-right: 3rem;
     }
 
     h1 {
