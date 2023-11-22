@@ -107,11 +107,11 @@ ul {
 
 @media screen and (min-width:600px) {
 
-
-    body {
-        margin-left: 15rem;
-        margin-right: 15rem;
+    h1, h2, h3, h4, h5, p, #t{
+        margin-left: 5rem ;
+        margin-right: 5rem;
     }
+
     a {
         text-decoration: none;
         color: palevioletred;
@@ -122,15 +122,11 @@ ul {
         font-weight: 600;
     }
 
-    h1, h2, h3, h4, h5, p, #t{
-        margin-left: 5rem ;
-        margin-right: 5rem;
-    }
-
     h1 {
         font-size: 7rem;
         line-height: 7rem;
         margin-top: 2rem;
+        text-align: center;
     }
 
     h2 {
