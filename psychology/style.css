@@ -107,9 +107,9 @@ ul {
 
 @media screen and (min-width:600px) {
 
-    h1, h2, h3, h4, h5, p, #t{
-        margin-left: 5rem ;
-        margin-right: 5rem;
+    h1, h2, h3, h4, h5, p, #t, ul{
+        margin-left: 3rem ;
+        margin-right: 3rem;
     }
 
     a {
