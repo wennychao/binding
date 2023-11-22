@@ -1,4 +1,4 @@
-h1, h2, h3, h4, p, blockquote, .read {
+h1, h2, h3, h4, h5 {
     font-family: var(--font-display);
     color: var(--font-color);
 }
@@ -8,38 +8,7 @@ body {
     margin: 20px;
 }
 
-h1 {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 20px;
-    margin-bottom: var(--space);
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    margin-bottom: 40px;
-    margin-top: 5px;
-}
-
-blockquote {
-    font-size: 12px;
-    font-style: italic;
-    margin: var(--space);
-}
-
-p:first-child {
-    text-indent: 40px;
-}
-
 p {
-    margin-bottom: var(--space);
-}
-
-.read {
-    font-size: 12px;
+    font-size: 1rem;
+    color: var(--font-color);
 }

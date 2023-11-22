@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display:wght@600;700;800;900&family=Poiret+One&family=Poppins:wght@100;200;300;400;600;700;800&family=Six+Caps&display=swap');
+:root {
+    --font-display: 'Big Shoulders Display', sans-serif;
+    --font-color:  aliceblue;
+    --margin: 1rem;
+}
+
+/*nav {
+    border: 1px solid aliceblue;
+    height: 60px;
+}*/
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+nav, .back {
+    color: var(--font-color);
+    font-size: 2rem;
+    margin:0;
+    display: inline-flex;
+    width: 100%;
+}
+
+#t {
+    color: var(--font-color);
+    width: 100%;
+    height: 0;
+    border: .5px solid;
+    margin-top: var(--margin);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    text-transform: uppercase;
+    margin-top: calc(var(--margin)*2);
+    margin-bottom: calc(var(--margin)*2);
+    text-align: center;
+}
+
+@keyframes GradientColorPalette {
+    0% {
+      color: #fed2ec;
+    }
+    25% {
+      color: #b3dbd3;
+    }
+    50% {
+      color: #abddff;
+    }
+    75% {
+      color: #d4cfff;
+    }
+    100% {
+      color: #f4d6db;
+    }
+  } 
+
+.title, h3, #bt {
+    animation-name: GradientColorPalette;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h2 {
+    margin-top: var(--margin);
+    margin-bottom: calc(var(--margin)*2);
+    font-style: italic;
+    border-radius: 60%;
+    border: 1px solid;
+    text-align: center;
+    padding-top: calc(var(--margin)*1.5);
+    padding-bottom: var(--margin);
+    max-width: 30rem;
+}
+
+#intro {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 40rem;
+    border-left: 2.5px solid #abddff;
+    padding-left: var(--margin);
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#bt {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--font-color);
+    margin-right: var(--margin);
+    margin-top: calc(var(--margin)*2);
+    color: #f4d6db;
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+}
+
+li p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin-top: var(--margin);
+    padding: var(--margin);
+    border: .5px solid;
+    border-radius: 2%;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+p:nth-child(2){
+    margin-top: 1rem;
+}
+
+li {
+    margin-top: calc(var(--margin) * 2);
+}
+
+li:nth-child(3){
+    margin-bottom: calc(var(--margin)*4);
+}
+
+@media screen and (min-width:600px) {
+
+    h1, h2, h3, h4, h5, p, #t, ul{
+        margin-left: 5rem ;
+        margin-right: 5rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+        line-height: 7rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    #bt {
+        left: 65%;
+        bottom: 5%;
+    }
+
+    #intro {
+        font-size: 1.2rem;
+        max-width: 40rem;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        border-left: 3px solid #abddff;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width:1330px) {
+
+    ul {
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
