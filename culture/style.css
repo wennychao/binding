@@ -45,9 +45,25 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    padding: var(--margin);
+    border: .5px solid;
+    border-radius: 2%;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5)
+}
+
+#color h3:nth-child(1){
+    color: rgb(255, 61, 61);
+}
+
+#color h3:nth-child(2){
+    color: rgb(219, 99, 38);
 }
 
 p {
