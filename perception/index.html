@@ -4,11 +4,26 @@
         <title>Perception</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../reset.css">
+        <link rel="stylesheet" href="../common.css">
         <link rel="stylesheet" href="style.css">
+        
+        <script>
+            function scrolltotop() {
+                window.scrollTo(0,0);
+            }
+        </script>
     </head>
 
     <body>
-        <nav id="back">⟣<div id="t"></div>⟢</nav>
+        <nav>
+            <div class="navbar" id="back" >
+            <div onclick="scrolltotop()" id="home"><a href="#home">Home</a></div>
+            <a href="../binding/psychology/index.html">Psychology</a>
+            <a href="../binding/perception/index.html">Perception</a>
+            <a href="../binding/culture/index.html">Culture</a>
+            </div>
+        </nav>
 
         <h1>Homage to an Homage of an Homage</h1>
 
@@ -104,7 +119,7 @@
     </body>
 
     <footer>
-        <div class="back">⟣<div id="t"></div>⟢</div>
-        <div id="bt"><a href="#back">⟣BACK TO TOP⟢</a><div>   
+        <div class="bottomstar">⟣<div id="line"></div>⟢</div>
+        <div onclick="scrolltotop()" id="backtotop"><a href="#back">⟣BACK TO TOP⟢</a><div>   
     </footer>
 </html>
