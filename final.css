@@ -1,0 +1,147 @@
+
+#intro {
+    color: var(--font-color);
+    margin-left: var(--margin);
+    margin-right:var(--margin);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+@keyframes GradientColorPalette {
+    0% {
+      color: #fed2ec;
+    }
+    25% {
+      color: #b3dbd3;
+    }
+    50% {
+      color: #abddff;
+    }
+    75% {
+      color: #d4cfff;
+    }
+    100% {
+      color: #f4d6db;
+    }
+  } 
+
+  @keyframes borderanimation {
+    0% {
+      border-color: #fed2ec;
+    }
+    25% {
+      border-color: #b3dbd3;
+    }
+    50% {
+      border-color: #abddff;
+    }
+    75% {
+      border-color: #d4cfff;
+    }
+    100% {
+      border-color: #f4d6db;
+    }
+  } 
+
+.title, h3 {
+    animation-name: GradientColorPalette;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 4px 4px rgb(81, 49, 132);
+}
+
+
+#intro {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-left: 2px solid #abddff;
+    padding-left: var(--margin);
+    animation-name: borderanimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h2 {
+    margin-top: var(--margin);
+    margin-bottom: calc(var(--margin)*2);
+    padding-top: calc(var(--margin)*1.5);
+}
+
+li p {
+    font-weight: 200;
+    margin-top: var(--margin);
+    padding: var(--margin);
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    /*box-shadow:  4px 4px 2px rgb(58, 0, 144);*/
+}
+
+p:nth-child(2){
+    margin-top: 1rem;
+}
+
+li {
+    margin-top: calc(var(--margin) * 2);
+}
+
+li:nth-child(3){
+    margin-bottom: calc(var(--margin)*4);
+}
+
+
+
+@media screen and (min-width:600px) {
+
+    #intro {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+
+    h1 {
+        text-align: center;
+        font-size: 8rem;
+        line-height: 8rem;
+        margin: auto;
+        margin-top: 6rem;
+    }
+
+    h2 {
+        margin:auto;
+        margin-top: 3rem;
+    }
+    
+    #intro {
+        width: 800px;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    li a:hover {
+        font-size: 3rem;
+    }
+
+    .article1 {
+        display: grid;
+    }
+
+    .article3 {
+        display: grid;
+    }
+}

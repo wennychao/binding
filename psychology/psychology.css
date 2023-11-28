@@ -1,39 +1,26 @@
-
-body {
-    max-width: 500px;
-    margin: auto;
-    min-width: 375px;
-}
-
-h1, h2, #big {
+#big {
+    font-size: 5.8rem;
+    /*background: linear-gradient(to bottom, #ffb380 0%,  #b6ffd2 50%, #0fc3fa 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     transition: font-size .25s linear; 
     -o-transition: font-size .25s linear; 
     -moz-transition: font-size .25s linear; 
-    -webkit-transition: font-size .25s linear; 
-}
-
-#big {
-    font-size: 22vw;
-    background: linear-gradient(to bottom, #ffb380 0%,  #b6ffd2 50%, #0ff2fa 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-transition: font-size .25s linear; */
 }
 
 h1 {
-    font-size: 7vw;
-    line-height: 4.9vh;
-    margin-top: 18vh;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    margin-top: 7rem;
     color: #ff80c6;
-    max-width: 70%;
 }
 
 h2 {
-    padding-top: var(--margin);
-    padding-bottom: var(--margin);
+    margin-bottom: calc(var(--margin)*2);
 }
 
 h3 {
-    animation: none;
     margin-left: var(--margin);
     margin-right: var(--margin);
     text-shadow: 0 0 ;
@@ -46,15 +33,16 @@ p {
     margin-top: var(--margin);
 }
 
-#sub {
+blockquote {
+    color: var(--font-color);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: 500;
-    margin-bottom: var(--margin);
-}
-
-.question {
-    font-weight: 400;
-    font-size: larger;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-top: calc(var(--margin) * 2);
+    margin-bottom: calc(var(--margin) * 2);
 }
 
 ul {
@@ -173,16 +161,19 @@ li section {
     }
   } 
 
-blockquote {
-    color: var(--font-color);
-    font-family: var(--font-display);
-    font-size: 1.5rem;
+#sub {
     font-style: italic;
     font-weight: 500;
-    margin-left: var(--margin);
-    margin-right: var(--margin);
-    margin-top: calc(var(--margin) * 2);
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: var(--margin);
+}
+
+.question {
+    font-weight: 400;
+    font-size: larger;
+}
+
+#res {
+    text-shadow: 4px 4px rgb(141, 141, 141);
 }
 
 #response {
@@ -194,13 +185,12 @@ blockquote {
 
 @media screen and (min-width:600px) {
 
-    #big {
-        font-size: 8rem;
-    }
 
     body {
-        max-width: 700px;
-        margin: auto;
+        max-width: 750px;
+    }
+    #big {
+        font-size: 8rem;
     }
     
     h1 {
@@ -248,5 +238,10 @@ blockquote {
         margin-left: 4rem;
         margin-right: 4rem;
     }
+}
+
+@media screen and (min-width:1280px) {
+
+
 
 }
