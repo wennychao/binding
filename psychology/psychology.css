@@ -1,3 +1,5 @@
+@media screen and (min-width:370px) {
+
 #big {
     font-size: 5.8rem;
     /*background: linear-gradient(to bottom, #ffb380 0%,  #b6ffd2 50%, #0fc3fa 100%);
@@ -183,12 +185,14 @@ li section {
     padding-bottom: var(--margin);
 }
 
-@media screen and (min-width:600px) {
+}
 
+@media screen and (min-width:600px) {
 
     body {
         max-width: 750px;
     }
+
     #big {
         font-size: 8rem;
     }
