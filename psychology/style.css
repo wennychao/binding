@@ -1,15 +1,30 @@
+
+body {
+    max-width: 500px;
+    margin: auto;
+    min-width: 375px;
+}
+
+h1, h2, #big {
+    transition: font-size .25s linear; 
+    -o-transition: font-size .25s linear; 
+    -moz-transition: font-size .25s linear; 
+    -webkit-transition: font-size .25s linear; 
+}
+
 #big {
-    font-size: 5.8rem;
-    background: linear-gradient(to bottom, #fffb80 0%,  #b6ffd2 50%, #fa0fa8 100%);
+    font-size: 22vw;
+    background: linear-gradient(to bottom, #ffb380 0%,  #b6ffd2 50%, #0ff2fa 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 h1 {
-    font-size: 2.3rem;
-    line-height: 2.4rem;
-    margin-top: 7rem;
-    color: #ff82d3;
+    font-size: 7vw;
+    line-height: 4.9vh;
+    margin-top: 18vh;
+    color: #ff80c6;
+    max-width: 70%;
 }
 
 h2 {
@@ -49,6 +64,7 @@ ul {
 
 li {
     margin-top: calc(var(--margin) * 2);
+    margin-bottom: calc(var(--margin) * 2.5);
 }
 
 li:nth-child(3){
@@ -69,28 +85,93 @@ li section {
 }
 
 #title1 {
-    text-shadow: 4px 4px  rgb(19, 19, 255);
+    text-shadow: 4px 4px  rgb(62, 62, 244);
 }
 
 #title2 {
-    text-shadow: 4px 4px rgba(255, 0, 170, 0.81);
+    text-shadow: 4px 4px rgba(255, 86, 199, 0.81);
 }
 
 #title3 {
-    text-shadow: 4px 4px rgba(166, 0, 255, 0.906);
+    text-shadow: 4px 4px rgb(159, 118, 255);
 }
 
 #lightandspace {
-    box-shadow: 8px 8px 2px rgb(19, 19, 255);
+    animation-name: lighandshadow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #vaporwave {
-    box-shadow: 8px 8px 2px rgba(255, 0, 170, 0.81);
+    animation-name: vaporshadow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #bisexual {
-    box-shadow: 8px 8px 2px rgba(166, 0, 255, 0.906);
+    transition: transform 1s ease;
+    animation-name: bishadow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-bottom: calc(var(--margin) * 3) ;
 }
+
+@keyframes lighandshadow {
+    0% {
+        box-shadow:6px 6px 2px rgb(62, 62, 244);
+    }
+    25% {
+        box-shadow:8px 8px 2px rgb(62, 86, 244);
+    }
+    50% {
+        box-shadow:10px 10px 2px rgb(99, 161, 255);
+    }
+    75% {
+        box-shadow:8px 8px 2px rgb(99, 226, 255);
+    }
+    100% {
+        box-shadow:6px 6px 2px rgb(100, 149, 255);
+    }
+  } 
+
+@keyframes vaporshadow {
+    0% {
+        box-shadow:6px 6px 2px rgb(255, 86, 199);
+    }
+    25% {
+        box-shadow:8px 8px 2px rgb(255, 86, 221);
+    }
+    50% {
+        box-shadow:10px 10px 2px rgb(241, 86, 255);
+    }
+    75% {
+        box-shadow:8px 8px 2px rgb(204, 86, 255);
+    }
+    100% {
+        box-shadow:6px 6px 2px rgba(255, 86, 162, 0.81);
+    }
+  } 
+
+@keyframes bishadow {
+    0% {
+        box-shadow:6px 6px 2px rgb(159, 118, 255);
+    }
+    25% {
+        box-shadow:8px 8px 2px rgb(187, 118, 255);
+    }
+    50% {
+        box-shadow:10px 10px 2px rgb(193, 118, 255);
+    }
+    75% {
+        box-shadow:8px 8px 2px rgb(230, 118, 255);
+    }
+    100% {
+        box-shadow:6px 6px 2px rgb(139, 118, 255);
+    }
+  } 
 
 blockquote {
     color: var(--font-color);
@@ -101,8 +182,71 @@ blockquote {
     margin-left: var(--margin);
     margin-right: var(--margin);
     margin-top: calc(var(--margin) * 2);
-    margin-bottom:  calc(var(--margin) * 2);
+    margin-bottom: calc(var(--margin) * 2);
 }
 
+#response {
+    border: 2px dashed aliceblue;
+    border-radius: 10px;
+    margin: var(--margin);
+    padding-bottom: var(--margin);
+}
 
+@media screen and (min-width:600px) {
 
+    #big {
+        font-size: 8rem;
+    }
+
+    body {
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: calc(var(--margin) * 8);
+        max-width: 650px;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    h3, p, li section {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    li {
+        margin-top: calc(var(--margin) * 3);
+    }
+
+    li:nth-child(3) {
+        margin-bottom: calc(var(--margin) * 3) ;
+    }
+
+    li p {
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+    }
+
+    blockquote {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    #response p {
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+    }
+
+    #response {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+}

@@ -32,12 +32,15 @@ p, #intro{
     font-family: poppins;
     color: var(--font-color);
     width: calc((100%) - 30px);
+    min-width: 350px;
     left: 50%;
     transform: translateX(-50%);
     height: 55px;
     background-color: rgb(20, 20, 20);
     border-top: 1px solid aliceblue;
     border-bottom: 1px solid aliceblue;
+    border: 1px solid aliceblue ;
+    border-radius: 10px;
     position: fixed;
     top: 1rem;
     box-sizing: border-box;
@@ -69,6 +72,10 @@ h1 {
     margin-bottom: calc(var(--margin)*2);
     /*text-align: center;*/
     color: var(--font-color);
+    transition: font-size .25s linear; 
+    -o-transition: font-size .25s linear; 
+    -moz-transition: font-size .25s linear; 
+    -webkit-transition: font-size .25s linear; 
 }
 
 @keyframes GradientColorPalette {
