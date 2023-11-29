@@ -177,7 +177,7 @@ footer {
         font-weight: 400;
     }
 
-    
-   
-
+    #backtotop {
+        display: none;
+    }
 }

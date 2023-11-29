@@ -110,9 +110,5 @@ p {
         line-height: 7.2rem;
         margin-top: calc(var(--margin) * 8);
     }
-
-    #backtotop {
-        display: none;
-    }
     
 }
