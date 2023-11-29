@@ -52,16 +52,67 @@ p {
 
 @media screen and (min-width:1280px) {
 
+    html, body, .col1, .col2 {
+        height: 100%;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .col1, .col2 {
+        width: 50%;
+      }
+      
+      .col1 {
+        background-color: rgb(255, 230, 192);
+        position: fixed;
+        left: 0;
+        top: 0;
+        animation-name: backgroundanima;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      
+      @keyframes backgroundanima {
+        0% {
+            background-color: rgb(255, 187, 0);
+        }
+        25% {
+            background-color: #b3dbd3;
+        }
+        50% {
+            background-color: rgb(255, 215, 104);
+        }
+        75% {
+            background-color: #d4cfff;
+        }
+        100% {
+          background-color: rgb(255, 235, 181);
+        }
+      } 
+      .col2 {
+       
+        margin-left: 50%;
+        overflow: auto;
+      }
+
     .desktop {
-        width: 700px;
         margin: auto;
+        margin-top: 8rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     h1 {
-        font-size: 9rem;
-        line-height: 8rem;
-        margin-top: calc(var(--margin) * 7);
-        margin-left: 27% ;
+        font-size: 7.5rem;
+        line-height: 7.2rem;
+        margin-top: calc(var(--margin) * 8);
     }
 
+    #backtotop {
+        display: none;
+    }
+    
 }

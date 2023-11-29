@@ -177,8 +177,35 @@ li p {
 
 @media screen and (min-width:1280px) {
 
+    html, body, .col1, .col2 {
+        height: 100%;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .col1, .col2 {
+        width: 50%;
+      }
+      
+      .col1 {
+        background-color: rgb(100, 183, 184);
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      
+      .col2 {
+       
+        margin-left: 50%;
+        overflow: auto;
+      }
+
     h1 {
         text-align: center;
+        font-size: 10rem;
+        line-height: 9rem;
     }
 
     h2 {
@@ -188,10 +215,6 @@ li p {
     }
 
     ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 6rem;
-        margin-right: 6rem;
         margin-bottom: 3rem;
     }
 
@@ -200,10 +223,33 @@ li p {
     }
 
     #first{
-        width: 800px;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 8rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
         margin-bottom: 3rem;
+    }   
+}
+
+@media screen and (min-width:1280px) {
+
+    .desktop {
+        width: 700px;
+        margin: auto;
+        margin-top: 8rem;
     }
-    
+
+    #response {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    h3, p, li section {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    #backtotop {
+        display: none;
+    }
 }

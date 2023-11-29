@@ -1,12 +1,12 @@
 #big {
     font-size: 5.8rem;
-    /*background: linear-gradient(to bottom, #ffb380 0%,  #b6ffd2 50%, #0fc3fa 100%);
+    /*background: linear-gradient(to bottom, #80e8ff 0%,  #b6d4ff 50%, #0fc3fa 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     transition: font-size .25s linear; 
     -o-transition: font-size .25s linear; 
     -moz-transition: font-size .25s linear; 
-    -webkit-transition: font-size .25s linear; */
+    -webkit-transition: font-size .25s linear;*/
 }
 
 h1 {
@@ -249,7 +249,53 @@ li section {
 }
 
 @media screen and (min-width:1280px) {
-
+    
+    html, body, .col1, .col2 {
+        height: 100%;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .col1, .col2 {
+        width: 50%;
+      }
+      
+      .col1 {
+        background-color: pink;
+        position: fixed;
+        left: 0;
+        top: 0;
+        animation-name: backgroundani;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      
+      .col2 {
+       
+        margin-left: 50%;
+        overflow: auto;
+      }
+      
+      @keyframes backgroundani {
+        0% {
+            background-color: #fed2ec;
+        }
+        25% {
+            background-color: #b3dbd3;
+        }
+        50% {
+            background-color: #abddff;
+        }
+        75% {
+            background-color: #d4cfff;
+        }
+        100% {
+          background-color: #f4d6db;
+        }
+      } 
     #big {
         font-size: 10rem;
     }
@@ -271,7 +317,7 @@ li section {
     .desktop {
         width: 700px;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 8rem;
     }
 
     #response {
@@ -279,35 +325,21 @@ li section {
         margin-right: 2rem;
     }
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: calc(var(--margin)*3);
-        margin-right: calc(var(--margin)*3);
-    }
-
     h3, p, li section {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 
     blockquote {
         margin: auto;
         margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
     }
-   
-    blockquote:before{
-        content: open-quote;
-        font-size: 3rem;
-        position: absolute;
-        margin-left: -1.8rem;
-        margin-top: -.5rem;
-    }
-    
-    blockquote:after{
-        content: close-quote;
-        font-size: 3rem;
-        position: absolute;
+
+    #backtotop {
+        display: none;
     }
 
 }

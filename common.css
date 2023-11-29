@@ -13,7 +13,7 @@ html {
 .navbar {
     font-family: poppins;
     color: var(--font-color);
-    width: calc((100%) - 30px);
+    
     min-width: 350px;
     left: 50%;
     transform: translateX(-50%);
@@ -127,13 +127,13 @@ footer {
 
 @media screen and (min-width:600px) {
 
-    .navbar {
-        width: calc((100%) - 8rem);
+    /*.navbar {
+        text-align: right;
     }
 
     .navbar a {
         font-size: 1rem;
-    }
+    }*/
 
     h1 {
         font-size: 7rem;
@@ -164,15 +164,20 @@ footer {
 
 @media screen and (min-width:1280px) {
 
-    .navbar {
+    /*.navbar {
         width: calc((100%) - 20rem);
-    }
+    }*/
 
+    .navbar {
+        left: 75%;
+        margin-top: 1rem;
+    }
     .navbar a:hover {
         font-style: italic;
         font-weight: 400;
     }
 
+    
    
 
 }
