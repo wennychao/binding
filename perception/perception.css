@@ -1,11 +1,18 @@
-#big {
-    font-size: 6.2rem;
-    line-height: 1;
+#homage_one {
+    color: rgb(255, 187, 0);
+}
+
+#homage_two {
+    color: rgb(255, 215, 104);
+}
+
+#homage_three {
+    color: rgb(255, 235, 181);
 }
 
 h1{
     font-size: 4.5rem;
-    line-height: 4.5rem;
+    line-height: 4.2rem;
     max-width: 400px;
 }
 
@@ -30,7 +37,7 @@ p {
 
     h1 {
         font-size: 7rem;
-        line-height: 7rem;
+        line-height: 6.5rem;
         margin-top: 2rem;
         min-width: 600px;
         max-width: 800px;
@@ -51,12 +58,10 @@ p {
     }
 
     h1 {
-        font-size: 7rem;
-        line-height: 7rem;
-        margin-top: 2rem;
-        min-width: 600px;
-        max-width: 800px;
-        margin-top: calc(var(--margin) * 6);
+        font-size: 9rem;
+        line-height: 8rem;
+        margin-top: calc(var(--margin) * 7);
+        margin-left: calc(var(--margin) * 19) ;
     }
 
 }
