@@ -298,15 +298,15 @@ li section {
       } 
 
     #big {
-        font-size: 10rem;
+        font-size: 9rem;
     }
 
     h1 {
         text-align: center;
-        font-size: 6rem;
-        line-height: 6rem;
+        font-size: 4rem;
+        line-height: 4rem;
         margin: auto;
-        margin-top: 8rem;
+        margin-top: 10rem;
         max-width: 900px;
     }
 
