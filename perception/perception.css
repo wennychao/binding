@@ -61,7 +61,7 @@ p {
         font-size: 9rem;
         line-height: 8rem;
         margin-top: calc(var(--margin) * 7);
-        margin-left: calc(var(--margin) * 19) ;
+        margin-left: 27% ;
     }
 
 }
