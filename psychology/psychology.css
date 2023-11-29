@@ -1,5 +1,3 @@
-@media screen and (min-width:370px) {
-
 #big {
     font-size: 5.8rem;
     /*background: linear-gradient(to bottom, #ffb380 0%,  #b6ffd2 50%, #0fc3fa 100%);
@@ -16,6 +14,7 @@ h1 {
     line-height: 2.3rem;
     margin-top: 7rem;
     color: #ff80c6;
+    max-width: 400px;
 }
 
 h2 {
@@ -185,13 +184,7 @@ li section {
     padding-bottom: var(--margin);
 }
 
-}
-
 @media screen and (min-width:600px) {
-
-    body {
-        max-width: 750px;
-    }
 
     #big {
         font-size: 8rem;
@@ -203,7 +196,7 @@ li section {
         margin-left: 4rem;
         margin-right: 4rem;
         margin-top: calc(var(--margin) * 8);
-        max-width: 650px;
+        max-width: 600px;
     }
 
     h2 {
@@ -228,9 +221,14 @@ li section {
         margin-right: var(--margin);
     }
 
+    li section, #response {
+        max-width: 700px;
+    }
+
     blockquote {
         margin-left: 3rem;
         margin-right: 3rem;
+        max-width: 750px;
     }
     
     #response p {
@@ -246,6 +244,65 @@ li section {
 
 @media screen and (min-width:1280px) {
 
+    #big {
+        font-size: 10rem;
+    }
 
+    h1 {
+        text-align: center;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin: auto;
+        margin-top: 8rem;
+        max-width: 900px;
+    }
+
+    h2 {
+        margin:auto;
+        margin-top: 3rem;
+    }
+
+    .desktop {
+        width: 700px;
+        margin: auto;
+        margin-top: 3rem;
+        border: none;
+    }
+
+    #response {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: calc(var(--margin)*3);
+        margin-right: calc(var(--margin)*3);
+    }
+
+    h3, p, li section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    blockquote {
+        margin: auto;
+        margin-top: 2rem;
+    }
+   
+    blockquote:before{
+        content: open-quote;
+        font-size: 3rem;
+        position: absolute;
+        margin-left: -1.8rem;
+        margin-top: -.5rem;
+    }
+    
+    blockquote:after{
+        content: close-quote;
+        font-size: 3rem;
+        position: absolute;
+    }
 
 }
