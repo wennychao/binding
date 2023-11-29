@@ -34,6 +34,12 @@ p {
     margin-top: var(--margin);
 }
 
+p a {
+    color: aquamarine;
+    font-style: italic;
+    font-weight: 300;
+}
+
 blockquote {
     color: var(--font-color);
     font-family: var(--font-display);
@@ -266,7 +272,6 @@ li section {
         width: 700px;
         margin: auto;
         margin-top: 3rem;
-        border: none;
     }
 
     #response {
