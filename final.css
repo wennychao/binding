@@ -103,10 +103,39 @@ li:nth-child(3){
 
 @media screen and (min-width:1280px) {
 
+  html, body, .col1, .col2 {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .col1, .col2 {
+    width: 50%;
+  }
+  
+  .col1 {
+    background-color: pink;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation-name: backgroundani;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .col2 {
+   
+    margin-left: 50%;
+    overflow: auto;
+  }
+
     h1 {
         text-align: center;
-        font-size: 8rem;
-        line-height: 8rem;
+        font-size: 7rem;
+        line-height: 7rem;
         margin: auto;
         margin-top: 6rem;
     }
@@ -117,17 +146,16 @@ li:nth-child(3){
     }
 
     #intro {
-        width: 800px;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 8rem;
         margin-bottom: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 
     ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
         margin-bottom: 3rem;
     }
 

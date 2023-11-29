@@ -296,6 +296,7 @@ li section {
           background-color: #f4d6db;
         }
       } 
+
     #big {
         font-size: 10rem;
     }
@@ -315,14 +316,13 @@ li section {
     }
 
     .desktop {
-        width: 700px;
         margin: auto;
         margin-top: 8rem;
     }
 
     #response {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 
     h3, p, li section {
@@ -333,8 +333,8 @@ li section {
     blockquote {
         margin: auto;
         margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         margin-bottom: 2rem;
     }
 
